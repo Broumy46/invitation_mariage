@@ -1,0 +1,349 @@
+*{
+    box-sizing:border-box;
+}
+
+:root{
+    --color1: #D89584;
+    --color2:#F4F4F4;
+
+}
+body{
+    margin:0;
+    font-family: Arial;
+
+}
+iframe{
+    width:100%;
+    border:none;
+    height:700px;
+}
+div.cover{
+    background:url(cover_img.png) no-repeat center/100% 100%,url(citation-en-tête.png) no-repeat center/cover;
+    height:350px;
+    position:relative;
+}
+img.cover_profile{
+    height:120px;
+    position: relative;
+    left: 50%;
+    margin-left:-75px;
+    margin-top :20px;
+}
+div.titre{
+    background:url(coeur.webp) no-repeat center/70% 145%;
+    #background-color:pink;
+    padding-bottom: 10px;
+    margin-bottom:8px;
+}
+div.titre h1{
+    color: #483d8b;
+    text-align:center;
+    font-size: 60px;
+    margin-top:8px;
+    margin-bottom:15px;
+    padding-top:30px;
+}
+div.titre p{
+    color: black;
+    text-align:center;
+    padding-top: 10px;
+    font-size: 32px;
+
+}
+
+.section{
+    padding-left: 40px;
+    padding-right:40px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    overflow:auto;
+}
+iv.section_grise1{
+    background: url(triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--color2);
+    padding-bottom: 120px;
+    text-align: center;
+
+}
+div.section_grise2{
+    background:url(fleurs2.jpg) no-repeat center/100% 120%;
+    background-color:var(--color2);
+    padding-top: 20px;
+}
+
+div.img_nous{
+    background:url(fleurs.jpg) no-repeat center/100% 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+
+
+div.texte_invit p{
+    color:black;
+    text-align:center;
+    font-size: 30px;
+}
+
+div.plan p{
+    color:grey;
+    left:8%;
+    font-size: 30px;
+    margin-left: 50px;
+
+}
+
+div.texte_truffe{
+    margin-top : 150px;
+    text-align : right;
+}
+
+p.para_photo{
+    font-size:20px;
+}
+
+div.plan img{
+    height:600px;
+    position: relative;
+    left:8%;
+    margin-left:-75px;
+    margin-top :20px;
+}
+
+
+h2{
+    color:grey;
+    font-size: 30px;
+    margin-left:50px;
+    margin-top:35px;
+}
+
+
+.col_portfolio{
+    width:48%;
+}
+
+table.col_droite{
+    float:right;
+}
+
+div.section2{
+    padding-left: 40px;
+    padding-right:40px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    overflow:auto;
+    margin-top: 50px;
+    valign:center;
+}
+.display_mobile{
+    display: none;
+}
+div.frame{
+    border:2px solid lightgrey;
+    margin:30px 50px;
+    margin-bottom:200px;
+    text-align:center;
+    padding:20px 30px;
+    box-shadow:0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+p.frame_title{
+    font-size:30px;
+    margin-top: 5px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+img.profilframe{
+    width:150px;
+    halign:center;
+}
+/*RESPONSIVE DESIGN : MOBILE*/
+@media only screen and (max-width:767px){
+    *{overflow:auto}
+
+    div.cover{
+    background:url(cover_img.png) no-repeat center/100% 100%,url(citation-en-tête.png) no-repeat center/cover;
+    height:170px;
+    position:relative;
+}
+    img.cover_profile{
+        /*object-fit:cover;*/
+        height:60px;
+        margin-left:-5px;
+        margin-top :2px;
+    }
+    div.titre{
+    background:url(coeur.webp) no-repeat center/90% 120%;
+    /*background-color:pink;*/
+    padding-bottom: 0px;
+    margin-bottom:5px;
+    margin-top:2px;
+    }
+    div.titre h1{
+        color: #483d8b;
+        text-align:center;
+        font-size: 28px;
+        margin-top:0px;
+        margin-bottom:20px;
+        padding-top:15px;
+    }
+    div.titre p{
+        color: black;
+        text-align:center;
+        padding-top: 8px;
+        font-size: 13px;
+
+    }
+
+    .section{
+        padding-left: 40px;
+        padding-right:40px;
+        padding-top:30px;
+        padding-bottom: 30px;
+        overflow:auto;
+    }
+    iv.section_grise1{
+        background: url(triangle2white.svg) no-repeat center bottom/100%;
+        background-color: var(--color2);
+        padding-bottom: 120px;
+        text-align: center;
+
+    }
+    div.section_grise2{
+        background:url(fleurs2.jpg) no-repeat center/100% 100%;
+        background-color:var(--color2);
+        padding-top: 20px;
+
+
+    }
+
+    div.img_nous{
+        background:url(fleurs.jpg) no-repeat center/100% 100%;
+        display: grid;
+        place-items: center;
+
+
+    }
+
+    div.img_nous img{
+        height: 231px;
+        width:308px;
+        margin-bottom:15px;
+
+    }
+
+
+    div.texte_invit p{
+        color:black;
+        text-align:center;
+        font-size: 10px;
+    }
+
+    div.plan{
+        margin-top:30px;
+    }
+
+    div.plan p{
+        color:grey;
+        left:8%;
+        font-size: 15px;
+        margin-left: 0px;
+        margin-bottom:7px;
+        margin-top :0px;
+        padding-bottom:0px;
+    }
+
+    div.plan img{
+        margin-top:7px;
+
+    }
+    div.texte_truffe{
+        margin-top :30px;
+        text-align : center;
+    }
+
+
+    p.para_photo{
+        font-size:10px;
+    }
+
+    div.plan img{
+        height:180px;
+        position: relative;
+        left:8%;
+        margin-left:-30px;
+        margin-top :2px;
+    }
+
+
+    h2{
+        color:grey;
+        font-size: 15px;
+        margin-left:3px;
+        margin-top:35px;
+    }
+
+
+    .col_portfolio{
+        width:100%;
+    }
+
+   .col_droite{
+        width : 100%;
+
+    }
+
+    img.appli{
+        height:420px;
+        width:420px;
+    }
+
+    div.section2{
+        padding-left: 40px;
+        padding-right:40px;
+        padding-top:30px;
+        padding-bottom: 30px;
+        overflow:auto;
+        margin-top: 50px;
+        valign:center;
+    }
+
+    div.frame{
+        margin:0px 0px;
+        padding:0px 0px;
+        box-shadow: none;
+
+    }
+
+    div.text_avec_ligne_verticale{
+        font-size:10px;
+        display: inline-block;
+    }
+
+    p.frame_title{
+        font-size:15px;
+        margin-top: 5px;
+        margin-bottom:10px;
+        text-align: center;
+    }
+
+    img.profilframe{
+        height:90px;
+        width:90px;
+        halign:center;
+    }
+
+    iframe{
+        width:100%;
+        border:none;
+        height: 100%;
+        vertical-align: center;
+    }
+
+     .display_mobile{
+        display: block;
+    }
+}
