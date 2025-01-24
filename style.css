@@ -58,13 +58,7 @@ div.titre p{
     padding-bottom: 30px;
     overflow:auto;
 }
-iv.section_grise1{
-    background: url(triangle2white.svg) no-repeat center bottom/100%;
-    background-color: var(--color2);
-    padding-bottom: 120px;
-    text-align: center;
 
-}
 div.section_grise2{
     background:url(fleurs2.jpg) no-repeat center/100% 120%;
     background-color:var(--color2);
@@ -93,7 +87,9 @@ div.plan p{
     margin-left: 50px;
 
 }
-
+img.chevre{
+    width:100%;
+}
 div.texte_truffe{
     margin-top : 150px;
     text-align : right;
@@ -135,7 +131,7 @@ div.section2{
     padding-bottom: 30px;
     overflow:auto;
     margin-top: 50px;
-    valign:center;
+    
 }
 .display_mobile{
     display: none;
@@ -158,29 +154,33 @@ p.frame_title{
 
 img.profilframe{
     width:150px;
-    halign:center;
+    
 }
 /*RESPONSIVE DESIGN : MOBILE*/
 @media only screen and (max-width:767px){
     *{overflow:auto}
 
     div.cover{
-    background:url(cover_img.png) no-repeat center/100% 100%,url(citation-en-tête.png) no-repeat center/cover;
-    height:170px;
+    background:url(cover_img.png) no-repeat center/60% 60%,url(citation-en-tête.png) no-repeat center/cover;
+    height:130px;
+    width : 100%;
     position:relative;
 }
     img.cover_profile{
         /*object-fit:cover;*/
-        height:60px;
+        height:80px;
         margin-left:-5px;
         margin-top :2px;
     }
     div.titre{
-    background:url(coeur.webp) no-repeat center/90% 120%;
+    background:url(coeur.webp) no-repeat center/90% 100%;
     /*background-color:pink;*/
     padding-bottom: 0px;
     margin-bottom:5px;
     margin-top:2px;
+    
+    vertical-align: center;
+    
     }
     div.titre h1{
         color: #483d8b;
@@ -198,40 +198,26 @@ img.profilframe{
 
     }
 
-    .section{
-        padding-left: 40px;
-        padding-right:40px;
-        padding-top:30px;
-        padding-bottom: 30px;
-        overflow:auto;
-    }
-    iv.section_grise1{
-        background: url(triangle2white.svg) no-repeat center bottom/100%;
-        background-color: var(--color2);
-        padding-bottom: 120px;
-        text-align: center;
-
-    }
+       
     div.section_grise2{
         background:url(fleurs2.jpg) no-repeat center/100% 100%;
         background-color:var(--color2);
-        padding-top: 20px;
-
+        padding-top: 5px;
+        
 
     }
 
     div.img_nous{
         background:url(fleurs.jpg) no-repeat center/100% 100%;
         display: grid;
-        place-items: center;
-
-
+        place-items: left;
+        
     }
 
     div.img_nous img{
-        height: 231px;
-        width:308px;
-        margin-bottom:15px;
+        height: 200px;
+        width:258px;
+        margin-bottom:10px;
 
     }
 
@@ -239,7 +225,7 @@ img.profilframe{
     div.texte_invit p{
         color:black;
         text-align:center;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     div.plan{
@@ -248,7 +234,7 @@ img.profilframe{
 
     div.plan p{
         color:grey;
-        left:8%;
+        left:2px;
         font-size: 15px;
         margin-left: 0px;
         margin-bottom:7px;
@@ -256,13 +242,14 @@ img.profilframe{
         padding-bottom:0px;
     }
 
-    div.plan img{
+    /*div.plan img{
         margin-top:7px;
-
-    }
+        width: 315px;
+    }*/
     div.texte_truffe{
         margin-top :30px;
         text-align : center;
+        font-size:10px;
     }
 
 
@@ -271,7 +258,8 @@ img.profilframe{
     }
 
     div.plan img{
-        height:180px;
+        height:190px;
+        width: 100%;
         position: relative;
         left:8%;
         margin-left:-30px;
@@ -295,10 +283,15 @@ img.profilframe{
         width : 100%;
 
     }
+    img.chevre{
+        margin-left: -10px;
+        width : 50%;
+        height: 50%;
 
+    }
     img.appli{
-        height:420px;
-        width:420px;
+        height:400px;
+        width:100%;
     }
 
     div.section2{
@@ -308,7 +301,7 @@ img.profilframe{
         padding-bottom: 30px;
         overflow:auto;
         margin-top: 50px;
-        valign:center;
+        
     }
 
     div.frame{
@@ -319,21 +312,21 @@ img.profilframe{
     }
 
     div.text_avec_ligne_verticale{
-        font-size:10px;
+        font-size:9px;
         display: inline-block;
     }
 
     p.frame_title{
-        font-size:15px;
-        margin-top: 5px;
-        margin-bottom:10px;
+        font-size:13px;
+        margin-top: 1px;
+        margin-bottom:2px;
         text-align: center;
     }
 
     img.profilframe{
         height:90px;
         width:90px;
-        halign:center;
+        
     }
 
     iframe{
